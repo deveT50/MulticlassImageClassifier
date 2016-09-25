@@ -10,11 +10,11 @@ Each class directories has manually classified pictures.
 At the same directory of this file,  
 
 
-$ python 01_make_train_data.py yourDatasetDirectoryName  
+`$ python 01_make_train_data.py yourDatasetDirectoryName`  
 your pictures in dataset will be copied into new one directory "images", and name of the pictures are changed.also train.txt,   test.txt, and label.txt will be created.  
 
 
-$ python 02_crop.py images cropedImages  
+`$ python 02_crop.py images cropedImages`  
 crop your pictures in "images" into 256*256px,and stored into a new directory "cropedImages".  
 
 
@@ -22,11 +22,11 @@ edit your test.txt and train.txt's path manually(ctrl + h).
 images -> cropedImages  
 
 
-$python 03_compute_mean.py train.txt  
+`$python 03_compute_mean.py train.txt`  
 mean image will be created as "mean.npy"  
 
 
-$python 04_train_imagenet.py -g 0 -E 200 train.txt test.txt  
+`$python 04_train_imagenet.py -g 0 -E 200 train.txt test.txt`  
 this is a learning part.  
 "-g 0" means use GPU(ID=0). -1 means CPU.  
 "-E" means epoch times.  
@@ -36,12 +36,12 @@ this is a learning part.
 "sigma.npy" is created. this stores standard deviation (sigma) in order to normalize dataset (mean=0, variance=1).  
 
 
-$python 05_resize.py yourPicture.jpg  
+`$python 05_resize.py yourPicture.jpg`  
 this is optional. resize your image into 256*256, and save new image as  "_r"+yourPicture.jpg  
 this require you openCV has been installed.  
 
 
-$python 06_inspection.py r_yourPicture.jpg  
+`$python 06_inspection.py r_yourPicture.jpg`  
 this is a classifier.  
 input your image, and this returns the probability of the subject in the image.  
 
