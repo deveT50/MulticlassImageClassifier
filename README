@@ -10,7 +10,7 @@ Each class directories has manually classified pictures.
 At the same directory of this file,  
 
 
-`$ python 01_make_train_data.py yourDatasetDirectoryName`  
+    `$ python 01_make_train_data.py yourDatasetDirectoryName`  
 your pictures in dataset will be copied into new one directory "images", and name of the pictures are changed.also train.txt,   test.txt, and label.txt will be created.  
 
 
