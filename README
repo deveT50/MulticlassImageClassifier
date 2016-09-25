@@ -6,7 +6,19 @@ To use, execute instructions below.
 
 
 You have to prepare dataset that one directory has some directories named as class name.  
-Each class directories has manually classified pictures.  
+Each class directories has manually classified pictures.   
+(something like this)
+
+dataset  
+|  
+|ーclass1  
+|　　|ーimage1   
+|    ーimage2  
+|  
+|ーclass2  
+
+
+
 At the same directory of this file,  
 
 
