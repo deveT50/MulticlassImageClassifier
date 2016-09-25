@@ -2,6 +2,12 @@
 modified Chainer example  
 performs multiclass classification of images  
 Ubuntu14.04, Python2.7, and Chainer1.14.0  
+
+refer:
+http://d.hatena.ne.jp/shi3z/20150709/1436397615
+http://hi-king.hatenablog.com/entry/2015/06/11/021144
+
+
 To use, execute instructions below.  
 
 
