@@ -68,7 +68,7 @@ sigma.npy が作成されます。このファイルは平均０，分散１に�
 ###ユーティリティ  
 utilityフォルダ内  
   
-* 00_increase_dataset.py ・・・・・・・・・・・・・ 画像にノイズを付加してデータを増やす[こちらを使用](http://qiita.com/bohemian916/items/9630661cd5292240f8c7 "")  
+* 00_increase_dataset.py ・・・・・・・・・・・・・ 画像にノイズを付加してデータを増やす[こちらを使用させていただきました](http://qiita.com/bohemian916/items/9630661cd5292240f8c7 "")  
 `$python 00_increase_dataset.py データセットフォルダ名`  
 trans_imagesフォルダが作成されます  
   
