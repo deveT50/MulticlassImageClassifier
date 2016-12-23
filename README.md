@@ -18,8 +18,8 @@ Chainer v1.5 exampleのimagenetおよび、こちらの方々のソースコー�
 データセット  
 |  
 |ーークラス１  
-|	|ー画像１  
-| 	ー画像２  
+|　　｜ー画像１  
+|　　｜ー画像２  
 |  
 |ークラス２  
 
@@ -68,7 +68,7 @@ sigma.npy が作成されます。このファイルは平均０，分散１に�
 ###ユーティリティ  
 utilityフォルダ内  
   
-* 00_increase_dataset.py ・・・・・・・・・・・・・ 画像にノイズを付加してデータを増やす[こちらを使用](http://qiita.com/bohemian916/items/9630661cd5292240f8c7 ""）  
+* 00_increase_dataset.py ・・・・・・・・・・・・・ 画像にノイズを付加してデータを増やす[こちらを使用](http://qiita.com/bohemian916/items/9630661cd5292240f8c7 "引用元"）  
 `$python 00_increase_dataset.py データセットフォルダ名`  
 trans_imagesフォルダが作成されます  
   
