@@ -10,8 +10,8 @@ parser.add_argument("source_dir")
 parser.add_argument("target_dir")
 args = parser.parse_args()
  
-target_shape = (256, 256)
-output_side_length=256
+target_shape = (64, 64)
+output_side_length=64
 
 os.mkdir(args.target_dir)
 

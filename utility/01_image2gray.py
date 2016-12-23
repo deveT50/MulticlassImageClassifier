@@ -5,6 +5,8 @@ import sys
 
 import numpy
 from PIL import Image
+from PIL import ImageOps
+
 import six.moves.cPickle as pickle
 
 
@@ -20,22 +22,14 @@ sum_image = None
 count = 0
 for line in open(args.dataset):# given tran.txt
 	filepath = os.path.join(args.root, line.strip().split()[0])
-	image = numpy.asarray(Image.open(filepath)).transpose(2, 0, 1)
-	#img=Image.open(filepath)
-	#print img.shape
-	#image = numpy.asarray(img)#.transpose(2, 0, 1)
-	#print image.shape
-
-	if sum_image is None:
-		sum_image = numpy.ndarray(image.shape, dtype=numpy.float32)
-		sum_image[:] = image
-	else:
-		sum_image += image
-	count += 1
+	img=Image.open(filepath)
+	img = ImageOps.grayscale(img)
+	
+	img.save(filepath)
 	sys.stderr.write('\r{}'.format(count)) #print number of images?
 	sys.stderr.flush()
 
 sys.stderr.write('\n')
 
-mean = sum_image / count
-pickle.dump(mean, open(args.output, 'wb'), -1)
+
+

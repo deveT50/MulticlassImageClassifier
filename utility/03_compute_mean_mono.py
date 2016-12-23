@@ -20,11 +20,11 @@ sum_image = None
 count = 0
 for line in open(args.dataset):# given tran.txt
 	filepath = os.path.join(args.root, line.strip().split()[0])
-	image = numpy.asarray(Image.open(filepath)).transpose(2, 0, 1)
-	#img=Image.open(filepath)
+	#image = numpy.asarray(Image.open(filepath)).transpose(2, 0, 1)
+	img=Image.open(filepath)
 	#print img.shape
-	#image = numpy.asarray(img)#.transpose(2, 0, 1)
-	#print image.shape
+	image = numpy.asarray(img)#.transpose(2, 0, 1)
+	print image.shape
 
 	if sum_image is None:
 		sum_image = numpy.ndarray(image.shape, dtype=numpy.float32)
