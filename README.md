@@ -2,7 +2,7 @@
 画像の多クラス分類を実行する  
 環境：ubuntu14.04, python2.7, chainer1.14.0  
 
-Chainer v1.5のexampleおよび、こちらの方々のソースコードを更に改変したものです：  
+Chainer v1.5 exampleのimagenetおよび、こちらの方々のソースコードを更に改変したものです：  
 <http://d.hatena.ne.jp/shi3z/20150709/1436397615>  
 <http://hi-king.hatenablog.com/entry/2015/06/11/021144>  
 
@@ -17,9 +17,9 @@ Chainer v1.5のexampleおよび、こちらの方々のソースコードを更�
 
 データセット  
 |  
-|ークラス１
-|　　|ー画像１   
-|   ー画像２  
+|ーークラス１  
+|	|ー画像１  
+| 	ー画像２  
 |  
 |ークラス２  
 
